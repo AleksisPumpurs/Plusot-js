@@ -1,0 +1,62 @@
+<style>
+    body{
+        background-color: black;
+       color: white; 
+       font-family: monospace;
+    }
+    input {
+        background-color: black;
+        color: white;
+    }
+    button{
+        background-color: black;
+        color: rgb(255, 255, 255);
+    }
+    h2{
+        font-size: 50px;
+    }
+
+</style>
+
+<html>
+    <head>
+        <title>
+            kalakulakators
+        </title>
+    </head>
+
+    <body>
+        <center>
+        <input type="number" id="s1">
+        <h1>+</h1>
+        <input type="number" id="s2">
+        
+        <BR>
+        <BR>
+
+        <hr>
+        <button onclick="plusot()">Sakalkulet</button>
+        <h2 id="Cipars">0</h2>
+    </center>
+    </body>
+    <script>
+        let Cipars=document.getElementById("Cipars")
+        let s1
+        let s2
+    
+       
+        let skaitlis
+
+        function plusot() {
+            s1=document.getElementById("s1").value
+            s2=document.getElementById("s2").value
+            
+            s1=parseFloat(s1)
+            s2=parseFloat(s2)
+            console.log("Poga uzpiesta")
+            console.log(s1 + s2)
+        
+            Cipars.innerHTML=s1+s2
+        }   
+    </script>
+</html>
